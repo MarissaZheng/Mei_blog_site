@@ -5,27 +5,17 @@ sidemenu: "true"
 title: About
 ---
 
-Hugo is a static site engine written in Go.
+My name is Meinizi Zheng. I am an Associate Consultant at [Axtria - Ingenious Insights](https://www.axtria.com/). I earned my master degree from the Department of Statistics and Biostatistics, Rutgers University. You can find more about my academic and professional experience on my [LinkedIn page](https://www.linkedin.com/in/meinizi-zheng-841919105/).
 
+This site is mainly for posts of statistics, machine learning and data visualization using R, along with my random thoughts here and there.
 
-It makes use of a variety of open source projects including:
+I love music and nature. I love traveling but most of the times I travel on Youtube. I record my lifestyle data including exercise data, sleeping data, and visualize them using R. I am always excited to explore new things!
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+My favorite quote:
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+> *“Stay hungry, stay foolish!”*
 
-## Setup
+My favorite Bible verse:
 
-Some fun facts about [Hugo](http://gohugo.io/):
+> *“Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres. Love never fails.” (1 Corinthians 13:6-8)*
 
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!

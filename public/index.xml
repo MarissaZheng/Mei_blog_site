@@ -50,11 +50,9 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>My name is Meinizi Zheng. I am an Associate Consultant at Axtria - Ingenious Insights. I earned my master degree from the Department of Statistics and Biostatistics, Rutgers University. You can find more about my academic and professional experience on my LinkedIn page.
+This site is mainly for posts of statistics, machine learning and data visualization using R, along with my random thoughts here and there.
+I love music and nature.</description>
     </item>
     
     <item>
