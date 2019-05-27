@@ -1,4 +1,4 @@
-baseurl = "meinizi.rbind.io"
+baseurl = "/"
 languageCode = "en-us"
 title = "Mei's Blog"
 theme = "blackburn"
