@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R For Fun on Mei&#39;s Blog</title>
+    <link>/tags/r-for-fun/</link>
+    <description>Recent content in R For Fun on Mei&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r-for-fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert My Recipe into Tidyverse Pipeline</title>
+      <link>/post/convert-my-recipe-in-tidyverse-pipeline-style/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/convert-my-recipe-in-tidyverse-pipeline-style/</guid>
+      <description>The PipelinePipe operators and Tidyverse packages have greatly improved my happiness level of writing and reading R code in data tidying, transformation, and visualization. Before, I always found myself writing long code with one function embedded into another function and another, something like h(g(f(x))) but way more complicated, or creating a lot of meaningless intermediate datasets like tmp1 and tmp2.
+The pipe along with Tidyverse packages makes the code much more readable.</description>
+    </item>
+    
+  </channel>
+</rss>

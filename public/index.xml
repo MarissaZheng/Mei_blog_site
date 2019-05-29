@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,6 +31,16 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Convert My Recipe into Tidyverse Pipeline</title>
+      <link>/post/convert-my-recipe-in-tidyverse-pipeline-style/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/convert-my-recipe-in-tidyverse-pipeline-style/</guid>
+      <description>The PipelinePipe operators and Tidyverse packages have greatly improved my happiness level of writing and reading R code in data tidying, transformation, and visualization. Before, I always found myself writing long code with one function embedded into another function and another, something like h(g(f(x))) but way more complicated, or creating a lot of meaningless intermediate datasets like tmp1 and tmp2.
+The pipe along with Tidyverse packages makes the code much more readable.</description>
     </item>
     
     <item>
