@@ -1,0 +1,88 @@
+---
+title: Convert My Recipe into Tidyverse Pipeline
+author: Meinizi Zheng
+date: '2019-05-29'
+slug: convert-my-recipe-in-tidyverse-pipeline-style
+categories:
+  - R
+tags:
+  - Tidyverse
+  - R For Fun
+description: ''
+topics: []
+---
+
+
+
+<div id="the-pipeline" class="section level2">
+<h2>The Pipeline</h2>
+<p>Pipe operators and <a href="https://www.tidyverse.org/">Tidyverse</a> packages have greatly improved my happiness level of writing and reading R code in data tidying, transformation, and visualization. Before, I always found myself writing long code with one function embedded into another function and another, something like h(g(f(x))) but way more complicated, or creating a lot of meaningless intermediate datasets like tmp1 and tmp2.</p>
+<p>The pipe along with Tidyverse packages makes the code much more readable. A simple example would be</p>
+<pre class="r"><code>iris %&gt;% 
+  filter(Sepal.Length &gt; 4.5) %&gt;% 
+  group_by(Species) %&gt;% 
+  summarise(avg = mean(Sepal.Length))</code></pre>
+<p>And you can read this piece of code as, “Take dataset iris, then filter it, then group it, and then summarize it”.</p>
+<p>For those who are not familiar with this powerful tool and are interested to learn more, here is an <a href="https://www.datacamp.com/community/tutorials/pipe-r-tutorial">article</a> about where the pipe operator in R comes from, how, when and why you should use them.</p>
+<p>For a more thorough tutorial of data wrangling, visualization, and modeling based on Tidyverse packages and pipelines, check out this awesome free online book, <a href="https://r4ds.had.co.nz/pipes.html">R for Data Science</a> by Hadley Wickham.</p>
+</div>
+<div id="convert-recipes-into-pipelines" class="section level2">
+<h2>Convert Recipes into Pipelines</h2>
+<p>I am a fast cook, and I am familiar with most of my saved recipes. Sometimes I check them quickly before cooking just to remind myself of a certain ingredient or the proper oven temperature. Recipes online I saved are too literal (too many words) for me, and I want my recipes to be clear like a cheat sheet.</p>
+<p>Since the pipeline give a clear chain of actions to the dataset (the ingredients in a recipe), and most of my saved recipes are cooked in a “linear” procedure, I find it very helpful to convert them into a pipeline style. I will show two dishes as examples.</p>
+<div id="coca-cola-wings" class="section level3">
+<h3>Coca-Cola wings</h3>
+<p align="center">
+<img src="/post/2019-05-29-convert-my-recipe-in-tidyverse-pipeline-style_files/cola_wings.jpg" />
+</p>
+<p>Coca-Cola wings is one of my favorite Chinese dishes. Here I copy paste a recipe I saved from <a href="http://appetiteforchina.com/recipes/coca-cola-chicken-wings">appetiteforchina</a>.</p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li>2 pounds chicken wings, wings and drummettes separated</li>
+<li>1/4 cup soy sauce</li>
+<li>2 tablespoons canola oil</li>
+<li>2 tablespoons dry sherry or Chinese rice wine</li>
+<li>3/4 cup Coca-Cola (not diet or anything flavored!)</li>
+<li>2 scallions, chopped</li>
+<li>A few pinches of freshly ground black pepper</li>
+</ul>
+<p><strong>Instructions</strong></p>
+<p>Put the chicken wings in a large bowl and pour half of the soy sauce on top. Turn the wings so they are well-coated and allow them to marinate for 10 to 15 minutes at room temperature. Heat a wok or large deep skillet over medium-high heat. Sear the chicken wings until they are golden brown on each side but not cooked through, about 3 minutes each side. Pour in the other half of the soy sauce, the sherry, and the Coke and bring the liquid to a simmer. Simmer the wings uncovered for 15 to 20 minutes, until the liquid is reduced to a glaze. Season the chicken with black pepper. Transfer the chicken to a plate, garnish with scallions, and serve.</p>
+<p><strong>Convert to Pipeline Version</strong></p>
+<pre class="r"><code>chicken wings %&gt;%
+  marinate(seasoning = c(salt, cooking wine, white pepper, ginger slice, soy source), time = 10 min) %&gt;%
+  fry(add = c(oil), heat = medium, bothside = TRUE, time = 5 min) %&gt;% 
+  boil(add = c(cola), heat = high, with_lid = TRUE, time = 5 min) %&gt;% 
+  boil(add = NULL, heat = low, with_lid = TRUE, time = 10 min) %&gt;% 
+  reduction()</code></pre>
+</div>
+<div id="soybean-sprout-side-dish" class="section level3">
+<h3>Soybean Sprout Side Dish</h3>
+<p align="center">
+<img src="/post/2019-05-29-convert-my-recipe-in-tidyverse-pipeline-style_files/sprout_side_dish.jpg" alt="final image" width="500"/>
+</p>
+<p>Soybean Sprout Side Dish is one of the most common Korean side dishes, and I like the cruchy and garlicy taste of it. The reciepe I saved is from <a href="https://www.youtube.com/watch?v=NWfhIq_MiiU&amp;feature=youtu.be">Maangchi</a>, my favorate Korean food Youtuber.</p>
+<p><strong>Ingredients</strong></p>
+<ul>
+<li>1 pound of soybean sprouts, rinsed and drained</li>
+<li>1 teaspoon salt</li>
+<li>2 garlic cloves, minced</li>
+<li>1 green onion, chopped</li>
+<li>½ teaspoon of hot pepper flakes</li>
+<li>1 teaspoon fish sauce (or soup soy sauce, or salt)</li>
+<li>1 teaspoon roasted sesame seeds,</li>
+<li>2 teaspoon roasted sesame oil</li>
+</ul>
+<p><strong>Directions</strong></p>
+<p>Place soybean sprouts in a pot. Add the salt and ½ cup of water and cover. Bring to a boil over medium high heat for 10 minutes. Drain. Put the cooked soybean sprouts in a mixing bowl. Add garlic, hot pepper flakes, green onion, fish sauce, sesame seeds, and sesame oil and mix by hand. Transfer to a serving plate. Serve as a side dish to rice.</p>
+<p><strong>Convert to Pipeline Version</strong></p>
+<pre class="r"><code>sprouts %&gt;%
+  boil(add = c(water, salt), with_lid = TRUE , time = 10 min) %&gt;%
+  drain() %&gt;% 
+  add(c(grinded garlic, hot pepper flakes, chopped green onion, fish sauce, sesame seeds, sesame oil))</code></pre>
+</div>
+<div id="some-commment" class="section level3">
+<h3>Some commment</h3>
+<p>You will notice there is no measure of amount for each ingredient in my recipe pipeline. It is because I am familiar with these dishes and usually just put <strong>a suitable amount</strong>. But if you do a word frequency ranking of a Chinese cooking book, the word <strong>“Shi Liang”</strong>, which means “some” and “suitable amount”, will probably be among the tops.</p>
+</div>
+</div>
